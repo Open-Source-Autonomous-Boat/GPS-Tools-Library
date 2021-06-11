@@ -1,6 +1,6 @@
 name=GPSTools
 version=0.0.1
-author=OSAB
+author=OSAB Project
 maintainer=Dogu <tocersdeck@gmail.com>
 sentence=Provides basic functionality for GPS and Navigation
 paraghraph=This is a library that allows microcontrollers to use and manipulate the data from GPS modules/sensors. This library doesn't depend on any other libraries and does not provide any support for GPS modules.
