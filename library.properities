@@ -5,5 +5,5 @@ maintainer=Dogu <tocersdeck@gmail.com>
 sentence=Provides basic functionality for GPS and Navigation
 paraghraph=This is a library that allows microcontrollers to use and manipulate the data from GPS modules/sensors. This library doesn't depend on any other libraries and does not provide any support for GPS modules.
 category=Data Processing
-url=https://github.com/Open-Source-Autonomous-Boat/GPSTools-Library
+url=https://github.com/Open-Source-Autonomous-Boat/GPSTools
 architectures=*
