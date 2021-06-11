@@ -1,11 +1,9 @@
 # GPSTools
 
-GPSTools is an arduino library that provides easy gps calculations.
+GPSTools is an arduino library that provides easy GPS calculations.
 
-Some functions include:
+## Functions:
 
-CalcHeading() - Calculates the heading required to get from GPS point 1 to GPS point 2
+`CalcHeading()` - Calculates the heading required to get from GPS point 1 to GPS point 2
 
-and
-
-CalcDistance() - Calculates the distance from two GPS points
+`CalcDistance()` - Calculates the distance from two GPS points
