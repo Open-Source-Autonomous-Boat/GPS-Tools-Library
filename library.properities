@@ -1,5 +1,5 @@
 name=GPSTools
-version=0.0.1
+version=0.1.0
 author=OSAB Project
 maintainer=Dogu <tocersdeck@gmail.com>
 sentence=Provides basic functionality for GPS and Navigation
