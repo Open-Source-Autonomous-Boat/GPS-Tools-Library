@@ -1,3 +1,0 @@
-GPSTools      KEYWORD1
-CalcHeading   KEYWORD2
-CalcDistance  KEYWORD2
