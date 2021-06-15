@@ -1,3 +1,5 @@
+[![License](https://badgen.net/github/license/open-source-autonomous-boat/GPSTools)](https://github.com/Open-Source-Autonomous-Boat/GPSTools/blob/main/LICENSE.md)
+
 # GPSTools
 
 GPSTools is an arduino library that provides easy GPS calculations.
