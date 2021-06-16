@@ -4,7 +4,7 @@
 
 # GPSTools
 
-GPSTools is an arduino library that provides easy GPS calculations.
+GPSTools is an arduino library that provides easy GPS and heading calculations.
 
 ## Functions:
 
