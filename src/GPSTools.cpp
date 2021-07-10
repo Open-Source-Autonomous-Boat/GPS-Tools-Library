@@ -46,7 +46,6 @@ struct coordinate CalcSmallestDistance(double lat1, double long1, double lat2, d
 		c = {.x = c.x - temppoint.x, .y = c.y - temppoint.y, .z = c.z - temppoint.z};
 	}
 	//calculating the actual point
-	struct point result;
 	double cosine;
 	struct point ac = {.x = c.x - a.x, .y = c.y - a.y, .z = c.z - a.z};
 	struct point ab = {.x = b.x - a.x, .y = b.y - a.y, .z = b.z - a.z};
