@@ -46,15 +46,13 @@ struct coordinate CalcSmallestDistance(double lat1, double long1, double lat2, d
 		c = {.x = c.x - temppoint.x, .y = c.y - temppoint.y, .z = c.z - temppoint.z};
 	}
 	//calculating the actual point
-	struct point result;
 	double cosine;
 	struct point ac = {.x = c.x - a.x, .y = c.y - a.y, .z = c.z - a.z};
 	struct point ab = {.x = b.x - a.x, .y = b.y - a.y, .z = b.z - a.z};
 	cosine = (ac.x * ab.x) + (ac.y * ab.y) + (ac.z * ab.z);
 	cosine /= sqrt((ac.x * ac.x) + (ac.y + ac.y) + (ac.z + ac.z));
 	ab = {.x = ab.x * cosine, .y = ab.y * cosine, .z = ab.z * cosine};
-	return ab;
 	ab = {.x = ab.x + a.x, .y = ab.y + a.y, .z = ab.z + a.z};
-	struct coordinate result = {.lat = sqrt((ab.x * ab.x) + (ab.y * ab.y) / ab.z), .lon = atan(ab.y / ab.x)}
+	struct coordinate result = {.lat = sqrt((ab.x * ab.x) + (ab.y * ab.y) / ab.z), .lon = atan(ab.y / ab.x)};
 	return result;
 }
