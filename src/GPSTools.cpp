@@ -14,10 +14,13 @@ double CalcHeading(double lat1, double long1, double lat2, double long2)
 	return EARTH_RADIUS * (atan_ * atan_);
 }
 
-struct point CalcSmallestDistance(double lat1, double long1, double lat2, double long2, double lat3, double long3)
+struct coordinate CalcSmallestDistance(double lat1, double long1, double lat2, double long2, double lat3, double long3)
 {
 	//Keep in mind! This funcion is *not* meant to be readable, it focuses on purely performance, you'd be better off implementing yourself rather than understand this
-	struct point a, b, c;
+	struct point
+	{
+		double x, y, z;
+	}a, b, c;
 	{
 		//calculate cartesian coordinates
 		double tempcos = cos(lat1);
@@ -51,4 +54,7 @@ struct point CalcSmallestDistance(double lat1, double long1, double lat2, double
 	cosine /= sqrt((ac.x * ac.x) + (ac.y + ac.y) + (ac.z + ac.z));
 	ab = {.x = ab.x * cosine, .y = ab.y * cosine, .z = ab.z * cosine};
 	return ab;
+	ab = {.x = ab.x + a.x, .y = ab.y + a.y, .z = ab.z + a.z};
+	struct coordinate result = {.lat = sqrt((ab.x * ab.x) + (ab.y * ab.y) / ab.z), .lon = atan(ab.y / ab.x)}
+	return result;
 }

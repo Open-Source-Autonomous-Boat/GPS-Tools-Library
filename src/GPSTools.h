@@ -3,9 +3,9 @@
 
 const long long EARTH_RADIUS = 6371000;
 
-struct point //i hate naming this s**t
+struct coordinate
 {
-	double x, y, z;
+	double lat, lon;
 };
 
 double CalcHeading(double lat1, double long1, double lat2, double long2);
