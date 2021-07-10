@@ -1,9 +1,9 @@
-[![License](https://badgen.net/github/license/open-source-autonomous-boat/GPSTools)](https://github.com/Open-Source-Autonomous-Boat/GPSTools/blob/main/LICENSE.md)
-[![Documentation](https://badgen.net/badge/icon/Documentation?icon=github&label)](https://docs.osab.xyz/libraries/gpstools/)
+[![License](https://badgen.net/github/license/open-source-autonomous-boat/NavTools)](https://github.com/Open-Source-Autonomous-Boat/NavTools/blob/main/LICENSE.md)
+[![Documentation](https://badgen.net/badge/icon/Documentation?icon=github&label)](https://docs.osab.xyz/libraries/navtools/)
 
-# GPSTools
+# NavTools
 
-GPSTools is an arduino library that provides easy GPS and heading calculations.
+NavToolsis an arduino library that provides easy GPS and heading calculations.
 
 ## Functions:
 

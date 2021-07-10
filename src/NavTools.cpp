@@ -1,5 +1,5 @@
 #include<cmath>
-#include"GPSTools.h"
+#include"NavTools.h"
 
 double CalcDistance(double lat1, double long1, double lat2, double long2)
 {
