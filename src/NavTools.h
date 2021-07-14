@@ -10,6 +10,6 @@ struct coordinate
 
 double CalcHeading(double lat1, double long1, double lat2, double long2);
 double CalcDistance(double lat1, double long1, double lat2, double long2);
-struct point CalcSmallestDistance(double lat1, double long1, double lat2, double long2, double lat3, double long3);
+struct coordinate CalcSmallestDistance(double lat1, double long1, double lat2, double long2, double lat3, double long3);
 
 #endif /* _NavTools_H */
