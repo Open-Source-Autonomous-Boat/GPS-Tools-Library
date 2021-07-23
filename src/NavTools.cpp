@@ -10,8 +10,16 @@ double CalcDistance(double lat1, double long1, double lat2, double long2)
 
 double CalcHeading(double lat1, double long1, double lat2, double long2)
 {
-	double atan_ = atan((sin(long1 - long2) * cos(lat1) * cos(lat2) * sin(lat2)) - (cos(long1 - long2) * sin(lat1) * cos(lat2)));
-	return EARTH_RADIUS * (atan_ * atan_);
+	// double atan_ = atan((sin(long1 - long2) * cos(lat1) * cos(lat2) * sin(lat2)) - (cos(long1 - long2) * sin(lat1) * cos(lat2)));
+	// return EARTH_RADIUS * (atan_ * atan_);
+	double deltaLong = (long2 - long1);
+	double y = sin(deltaLong) * cos(lat2);
+	double x = cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(deltaLong);
+	double brng = atan2(y, x);
+	brng = brng * (180.0/3.141592653589793238463); // radians to degrees
+	brng = fmod((brng + 360), 360);
+	//brng = 360 - brng; // count degrees counter-clockwise - remove to make clockwise
+	return brng;
 }
 
 struct coordinate CalcSmallestDistance(double lat1, double long1, double lat2, double long2, double lat3, double long3)
