@@ -8,7 +8,7 @@ double CalcDistance(double lat1, double long1, double lat2, double long2)
 	return EARTH_RADIUS * (2 * asin((sin1 * sin1) + (cos(lat1) * cos(lat2) * sin2 * sin2)));
 }
 
-double CalcHeading(double lat1, double long1, double lat2, double long2)
+double CalcBearing(double lat1, double long1, double lat2, double long2)
 {
 	// double atan_ = atan((sin(long1 - long2) * cos(lat1) * cos(lat2) * sin(lat2)) - (cos(long1 - long2) * sin(lat1) * cos(lat2)));
 	// return EARTH_RADIUS * (atan_ * atan_);
