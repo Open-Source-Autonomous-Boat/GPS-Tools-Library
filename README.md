@@ -7,6 +7,6 @@ NavToolsis an arduino library that provides easy GPS and heading calculations.
 
 ## Functions:
 
-`CalcHeading()` - Calculates the heading required to get from GPS point 1 to GPS point 2
+`CalcBearing()` - Calculates the bearing between GPS point 1 and GPS point 2
 
 `CalcDistance()` - Calculates the distance from two GPS points
