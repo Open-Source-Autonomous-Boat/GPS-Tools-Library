@@ -3,9 +3,15 @@
 
 double CalcDistance(double lat1, double long1, double lat2, double long2)
 {
+	lat1 = lat1*(M_PI/180);
+	long1 = long1*(M_PI/180);
+	lat2 = lat2*(M_PI/180);
+	long2 = long2*(M_PI/180);
+
 	double sin1 = sin((lat1 - lat2) / 2);
 	double sin2 = sin((long1 - long2) / 2);
-	return EARTH_RADIUS * (2 * asin((sin1 * sin1) + (cos(lat1) * cos(lat2) * sin2 * sin2)));
+	double a = (sin1*sin1) + cos(lat1) * cos(lat2) * (sin2*sin2);
+	return EARTH_RADIUS * 2 * atan2(sqrt(a), sqrt(1-a));
 }
 
 double CalcBearing(double lat1, double long1, double lat2, double long2)
