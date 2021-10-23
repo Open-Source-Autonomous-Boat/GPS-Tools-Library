@@ -1,7 +1,7 @@
 #ifndef _NavTools_H /* start of the NavTools.h */
 #define _NavTools_H
 
-const long long EARTH_RADIUS = 6371000;
+const long long EARTH_RADIUS = 6371000; // In Meters
 
 struct coordinate
 {
